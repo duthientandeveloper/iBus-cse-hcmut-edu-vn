@@ -28,16 +28,9 @@ function routeStationCtrl($scope, $log, getRoute, getStop) {
 			.success(function(data) {
 				for (var i = data.length - 1; i >= 0; i--) {
 					station.push(data[i].Station);
-					var xxx= polyline.decode(data[i].PolyLine);
-					$log.log()
 				};
 
 				for (var i = station.length - 1; i >= 0; i--) {
-					arrpath.push({
-						lat: station[i].Lat,
-						lng: station[i].Lng,
-					});
-
 					$scope.markers.push({
 						lat: station[i].Lat,
 						lng: station[i].Lng,
