@@ -26,6 +26,8 @@ function routeStationCtrl($scope, $log, getRoute, getStop) {
 	$scope.update = function(id) {
 		getStop.listStop(id)
 			.success(function(data) {
+				station = [];
+				$scope.removeMarkers();
 				for (var i = data.length - 1; i >= 0; i--) {
 					station.push(data[i].Station);
 				};
