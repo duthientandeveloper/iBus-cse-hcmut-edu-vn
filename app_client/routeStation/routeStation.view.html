@@ -1,0 +1,9 @@
+<navigation></navigation>
+<div class="container">
+	
+	<select class="form-control" ng-options="'\['+route.Code+'\] ' + route.Name for route in routes" 
+   ng-model="selectedItem" ng-change="update(selectedItem.Id)" >
+    </select>
+	<leaflet lf-center="london" markers="markers" paths="paths" width="100%" height="480px"></leaflet>
+	<footer-generic></footer-generic>
+</div>
