@@ -389,6 +389,7 @@
 	text-align: center;
 	}
 .leaflet-popup-content-wrapper {
+	color: green;
 	padding: 1px;
 	text-align: left;
 	border-radius: 12px;

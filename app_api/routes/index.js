@@ -11,7 +11,6 @@ router.get('/routes', function(req, res, next) {
 		maxRedirects: 10
 	}, function(error, response, body) {
 		var data = JSON.parse(body);
-		console.log(body);
 		res.json(data)
 	});	
 });
